@@ -16,9 +16,9 @@ $(document).ready(() => {
     }
   });
 
-      //Leave it here for learning purpose:
-      //use CSS animation when you can without talking to server
-      /*
+  //Leave it here for learning purpose:
+  //use CSS animation when you can without talking to server
+  /*
       $('.tweet').on('mouseover', function(event) {
       $('.username,.icon,.shorthand,.message,.tweet .footer').removeClass("onHover");
       $('.username,.icon,.shorthand,.message,.tweet .footer').addClass("onHover");

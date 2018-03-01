@@ -42,7 +42,7 @@ $('#document').ready(function(e) {
     $tweet.append($footer);
 
     return $tweet;
-  }
+  };
 
   function renderTweets(tweets) {
     $('#tweets-container').empty();
@@ -56,7 +56,7 @@ $('#document').ready(function(e) {
     $.get('/tweets').done((tweets) => {
       renderTweets(tweets);
     });
-  }
+  };
 
   $('.new-tweet form').on('submit', function(event) {
     event.preventDefault();

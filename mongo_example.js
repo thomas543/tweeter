@@ -28,7 +28,7 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
   //     `db`, so it will still work. Yay!
 
   getTweets((err, tweets) => {
-    if (err) throw err;
+    if (err) { throw err; }
 
     console.log("Logging each tweet:");
     for (let tweet of tweets) {
