@@ -44,8 +44,6 @@ $('#document').ready(function(e) {
     return $tweet;
   }
 
-
-
   function renderTweets(tweets) {
     $('#tweets-container').empty();
     tweets.forEach((tweet) => {
@@ -53,8 +51,6 @@ $('#document').ready(function(e) {
       $('#tweets-container').prepend($newTweet);
     });
   }
-
-
 
   const loadTweets = () => {
     $.get('/tweets').done((tweets) => {
@@ -78,10 +74,9 @@ $('#document').ready(function(e) {
   });
   loadTweets();
 
+  //toggle compose by button
   $('#composeButton').on('click', (event) => {
-
     $('.new-tweet').slideToggle("slow");
     $('.new-tweet form textArea').focus();
-
   });
 });
