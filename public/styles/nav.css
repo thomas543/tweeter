@@ -1,23 +1,38 @@
 #nav-bar {
-  background-color: #00a087;
-  width: 100%;
-  color: #e8fdff;
-  position: fixed;
-  top:0;
-  left: 0;
-  padding: 0 2em;
-  display: block;
+    background-color: #00a087;
+    width: 100%;
+    color: #e8fdff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 2em;
+    display: block;
 }
 
 #nav-bar .logo {
-  width: 80px;
-  height: 80px;
-  float: left;
+    width: 80px;
+    height: 80px;
+    float: left;
 }
 
 #nav-bar .header {
-  margin-left: 10px;
-  font-size: 200%;
-  line-height: 2.5em;
-  float: left;
+    margin-left: 10px;
+    font-size: 200%;
+    line-height: 2.5em;
+    float: left;
+}
+
+#composeButton {
+    float: right;
+    background-color: lightgreen;
+    width: 125px;
+    height: 50px;
+    margin: 1em;
+    border: 2px solid white;
+    border-radius: 20%;
+}
+
+#composeButton:hover {
+    background-color:white;
+    color:black;
 }
