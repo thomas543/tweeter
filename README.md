@@ -21,6 +21,6 @@ This repository is the starter code for the project: Students will fork and clon
 - mongodb
 
 ## Screenshots
-!["Screenshot of homepage"]()
-!["Screenshot of composebox"]()
-!["Screenshot of tweet"]()
+!["Screenshot of homepage"](https://github.com/thomas543/tweeter/blob/master/homepage.png)
+!["Screenshot of composebox"](https://github.com/thomas543/tweeter/blob/master/compose%20box.png)
+!["Screenshot of tweet"](https://github.com/thomas543/tweeter/blob/master/sample%20tweet.png)
