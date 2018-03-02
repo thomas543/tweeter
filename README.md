@@ -19,3 +19,8 @@ This repository is the starter code for the project: Students will fork and clon
 - Chance
 - md5
 - mongodb
+
+## Screenshots
+!["Screenshot of homepage"]()
+!["Screenshot of composebox"]()
+!["Screenshot of tweet"]()
