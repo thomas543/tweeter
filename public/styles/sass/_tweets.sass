@@ -1,0 +1,60 @@
+.tweet
+  border: 1px solid $primary-color
+  border-radius: 5px
+  margin: 1em 2em
+  opacity: 0.5
+  background-color: $background-color
+  &:hover
+    opacity: 1
+    box-shadow: 5px 5px grey
+  .header
+    background-color: $secondary-color
+    width: 100%
+    overflow: auto
+  .icon
+    height: 64px
+    width: 64px
+    border: 1px solid $primary-color
+    border-radius: 5px
+  .username,
+  .icon,
+  .shorthand
+    float: left
+    display: inline-block
+    color: $tetriary-color
+    margin: 0.5em
+    font-size: 1.5em
+  .shorthand
+    float: right
+    margin-right: 1em
+    margin-top: 1em
+    font-size: 1em
+  .message
+    display: block
+    border-bottom: 1px solid grey
+    text-align: middle
+    margin: 0
+    padding: 1.5em 1em
+    font-size: 1.2em
+    color: $font-color
+    background-color: $background-color
+  .footer
+    display: block
+    color: $font-color
+    padding: 0.5em
+    font-size: 0.75em
+    overflow: auto
+    p
+      display: inline-block
+  .miniIcons
+    list-style: none
+    float: right
+    margin: 8px
+    padding: 0
+    font-size: 1.25em
+    display: none
+    &:hover
+      display: inline
+    li
+      display: inline
+

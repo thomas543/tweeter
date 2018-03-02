@@ -1,0 +1,35 @@
+nav
+
+  &#nav-bar
+    background-color: $primary-color
+    width: 100%
+    color: $font-color
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 1
+    display: block
+    padding: 0 2em
+
+  .logo
+    width: 80px
+    height: 80px
+    float: left
+
+  .header
+    margin-left: 10px
+    font-size: 200%
+    line-height: 2.5em
+    float: left
+
+  #composeButton
+    float: right
+    background-color: $secondary-color
+    width: 125px
+    height: 2em
+    margin: 1em
+    border: 1px solid $background-color
+    border-radius: 5%
+    &:hover
+      background-color: lighten($secondary-color, 20%)
+      color: $font-color
