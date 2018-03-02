@@ -46,6 +46,7 @@ $('#document').ready(function(e) {
 
   function renderTweets(tweets) {
     $('#tweets-container').empty();
+    $('form textArea').val("");
     tweets.forEach((tweet) => {
       const $newTweet = createNewTweetElement(tweet);
       $('#tweets-container').prepend($newTweet);
@@ -64,7 +65,7 @@ $('#document').ready(function(e) {
     if (!userInput.trim().length) {
       alert('you cannot send empty tweet!');
     } else if (userInput.length > 140) {
-      alert('tweet must be with in 140 characters');
+      alert('tweet must be within 140 characters');
     } else {
       const data = { text: userInput };
       $.post('/tweets', data).done(() => {
