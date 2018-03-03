@@ -1,5 +1,6 @@
 nav
-
+  display: flex
+  justify-content: space-around
   &#nav-bar
     background-color: $primary-color
     width: 100%
@@ -8,12 +9,12 @@ nav
     top: 0
     left: 0
     z-index: 1
-    display: block
+    display: flex
     padding: 0 2em
 
   .logo
-    width: 80px
-    height: 80px
+    width: 64px
+    height: 64px
     float: left
 
   .header
@@ -30,6 +31,42 @@ nav
     margin: 1em
     border: 1px solid $background-color
     border-radius: 5%
+
     &:hover
       background-color: lighten($secondary-color, 20%)
       color: $font-color
+
+  .userFlow
+    width: 75vw
+    display: flex
+    float: right
+    max-height: 100 vh
+    overflow: auto
+    justify-content: flex-start
+    align-items: center
+
+    form
+      color: $secondary-color
+      display: inline-block
+
+      label,
+      input,
+        display: inline-block
+
+      .loginButton,
+      .buttonRegister
+        display: inline
+        width: 125px
+        height: 2em
+        border-radius: 5px
+
+        &:hover
+          background-color: lighten($secondary-color, 20%)
+          color: $font-color
+
+        a
+          text-decoration: none
+          color: $primary-color
+
+
+

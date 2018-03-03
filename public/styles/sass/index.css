@@ -21,36 +21,67 @@ main {
   margin: 80px auto 0;
   padding-top: 1em; }
 
-nav#nav-bar {
-  background-color: #000;
-  width: 100%;
-  color: #000;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  display: block;
-  padding: 0 2em; }
-nav .logo {
-  width: 80px;
-  height: 80px;
-  float: left; }
-nav .header {
-  margin-left: 10px;
-  font-size: 200%;
-  line-height: 2.5em;
-  float: left; }
-nav #composeButton {
-  float: right;
-  background-color: #eee;
-  width: 125px;
-  height: 2em;
-  margin: 1em;
-  border: 1px solid #fff;
-  border-radius: 5%; }
-  nav #composeButton:hover {
-    background-color: white;
-    color: #000; }
+nav {
+  display: flex;
+  justify-content: space-around; }
+  nav#nav-bar {
+    background-color: #000;
+    width: 100%;
+    color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    padding: 0 2em; }
+  nav .logo {
+    width: 64px;
+    height: 64px;
+    float: left; }
+  nav .header {
+    margin-left: 10px;
+    font-size: 200%;
+    line-height: 2.5em;
+    float: left; }
+  nav #composeButton {
+    float: right;
+    background-color: #eee;
+    width: 125px;
+    height: 2em;
+    margin: 1em;
+    border: 1px solid #fff;
+    border-radius: 5%; }
+    nav #composeButton:hover {
+      background-color: white;
+      color: #000; }
+  nav .userFlow {
+    width: 75vw;
+    display: flex;
+    float: right;
+    max-height: 100 vh;
+    overflow: auto;
+    justify-content: flex-start;
+    align-items: center; }
+    nav .userFlow form {
+      color: #eee;
+      display: inline-block; }
+      nav .userFlow form label,
+      nav .userFlow form input {
+        display: inline-block; }
+      nav .userFlow form .loginButton,
+      nav .userFlow form .buttonRegister {
+        display: inline;
+        width: 125px;
+        height: 2em;
+        border-radius: 5px; }
+        nav .userFlow form .loginButton:hover,
+        nav .userFlow form .buttonRegister:hover {
+          background-color: white;
+          color: #000; }
+        nav .userFlow form .loginButton a,
+        nav .userFlow form .buttonRegister a {
+          text-decoration: none;
+          color: #000; }
 
 .tweet {
   border: 1px solid #000;
@@ -60,7 +91,9 @@ nav #composeButton {
   background-color: #fff; }
   .tweet:hover {
     opacity: 1;
-    box-shadow: 5px 5px grey; }
+    box-shadow: 5px 5px black; }
+    .tweet:hover .miniIcons {
+      display: inline; }
   .tweet .header {
     background-color: #eee;
     width: 100%;
