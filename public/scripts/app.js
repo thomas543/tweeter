@@ -27,7 +27,7 @@ $('#document').ready(function(e) {
     const $headerH1 = $("<h1>" + username + "</h1>").addClass("username");
     const $headerP = $("<p>" + handle + "</p>").addClass("shorthand");
     const $headerImg = $("<img>").addClass("icon").attr("src", mdAvatar);
-    const $messageP = $("<p>" + escape(content) + "</p>").addClass("message");
+    const $messageP = $("<p>").addClass("message").text(content);
     const $footerP = $(`<p data-livestamp=` + time + `></p>`).addClass("timeStamp");
     const $footerUl = $(`<ul><li><i class="fas fa-flag"></i></li>
                         <li><i class="fas fa-retweet"></i></li>
@@ -47,6 +47,7 @@ $('#document').ready(function(e) {
   function renderTweets(tweets) {
     $('#tweets-container').empty();
     $('form textArea').val("");
+    $('.counter').text(140);
     tweets.forEach((tweet) => {
       const $newTweet = createNewTweetElement(tweet);
       $('#tweets-container').prepend($newTweet);

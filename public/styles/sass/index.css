@@ -37,12 +37,14 @@ nav {
   nav .logo {
     width: 64px;
     height: 64px;
-    float: left; }
+    float: left;
+    margin-top: 8px; }
   nav .header {
     margin-left: 10px;
     font-size: 200%;
     line-height: 2.5em;
-    float: left; }
+    float: left;
+    color: #eee; }
   nav #composeButton {
     float: right;
     background-color: #eee;
@@ -54,34 +56,6 @@ nav {
     nav #composeButton:hover {
       background-color: white;
       color: #000; }
-  nav .userFlow {
-    width: 75vw;
-    display: flex;
-    float: right;
-    max-height: 100 vh;
-    overflow: auto;
-    justify-content: flex-start;
-    align-items: center; }
-    nav .userFlow form {
-      color: #eee;
-      display: inline-block; }
-      nav .userFlow form label,
-      nav .userFlow form input {
-        display: inline-block; }
-      nav .userFlow form .loginButton,
-      nav .userFlow form .buttonRegister {
-        display: inline;
-        width: 125px;
-        height: 2em;
-        border-radius: 5px; }
-        nav .userFlow form .loginButton:hover,
-        nav .userFlow form .buttonRegister:hover {
-          background-color: white;
-          color: #000; }
-        nav .userFlow form .loginButton a,
-        nav .userFlow form .buttonRegister a {
-          text-decoration: none;
-          color: #000; }
 
 .tweet {
   border: 1px solid #000;
@@ -124,7 +98,8 @@ nav {
     padding: 1.5em 1em;
     font-size: 1.2em;
     color: #000;
-    background-color: #fff; }
+    background-color: #fff;
+    word-wrap: break-word; }
   .tweet .footer {
     display: block;
     color: #000;

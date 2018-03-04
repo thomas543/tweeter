@@ -16,12 +16,14 @@ nav
     width: 64px
     height: 64px
     float: left
+    margin-top: 8px
 
   .header
     margin-left: 10px
     font-size: 200%
     line-height: 2.5em
     float: left
+    color: $secondary-color
 
   #composeButton
     float: right
@@ -35,38 +37,6 @@ nav
     &:hover
       background-color: lighten($secondary-color, 20%)
       color: $font-color
-
-  .userFlow
-    width: 75vw
-    display: flex
-    float: right
-    max-height: 100 vh
-    overflow: auto
-    justify-content: flex-start
-    align-items: center
-
-    form
-      color: $secondary-color
-      display: inline-block
-
-      label,
-      input,
-        display: inline-block
-
-      .loginButton,
-      .buttonRegister
-        display: inline
-        width: 125px
-        height: 2em
-        border-radius: 5px
-
-        &:hover
-          background-color: lighten($secondary-color, 20%)
-          color: $font-color
-
-        a
-          text-decoration: none
-          color: $primary-color
 
 
 
