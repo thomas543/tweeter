@@ -8,8 +8,9 @@ This repository is the starter code for the project: Students will fork and clon
 
 1. Fork this repository, then clone your fork of this repository.
 2. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
-4. Go to <http://localhost:8080/> in your browser.
+3. Change hidden file `.env.example` to `.env` to get mongo sandbox environment.
+4. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
+5. Go to <http://localhost:8080/> in your browser.
 
 ## Dependencies
 
@@ -19,6 +20,7 @@ This repository is the starter code for the project: Students will fork and clon
 - Chance
 - md5
 - mongodb
+- dotenv
 
 ## Screenshots
 !["Screenshot of homepage"](https://github.com/thomas543/tweeter/blob/master/Homepage.png)
