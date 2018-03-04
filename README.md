@@ -23,6 +23,6 @@ This repository is the starter code for the project: Students will fork and clon
 - dotenv
 
 ## Screenshots
-!["Screenshot of homepage"](https://github.com/thomas543/tweeter/tree/master/public/images/Homepage.png)
-!["Screenshot of composebox"](https://github.com/thomas543/tweeter/tree/master/public/images/compose%20box.png)
-!["Screenshot of tweet"](https://github.com/thomas543/tweeter/tree/master/public/images/sample%20tweet.png)
+!["Screenshot of homepage"](https://github.com/thomas543/tweeter/blob/master/public/images/Homepage.png)
+!["Screenshot of composebox"](https://github.com/thomas543/tweeter/blob/master/public/images/compose%20box.png)
+!["Screenshot of tweet"](https://github.com/thomas543/tweeter/blob/master/public/images/sample%20tweet.png)
